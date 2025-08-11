@@ -1,13 +1,8 @@
-```markdown
-# Custom LLM Scripts
-
-![LLM Workflow](https://via.placeholder.com/800x200?text=Custom+LLM+Workflow) <!-- Optional: Add a diagram or screenshot here via GitHub issues or external host -->
-
 ## Introduction
 
 This repository provides a set of Python scripts to create, train, convert to GGUF format, and run inference on a custom Large Language Model (LLM) based on a GPT-like transformer architecture. It's designed for educational and experimental purposes, allowing users to build a small-scale LLM from scratch using PyTorch.
 
-Key features:
+Key features:-
 - **Decoder-Only Transformer**: Simple GPT-style model for text generation.
 - **Command-Line Focus**: Easy-to-follow steps for creation, training, conversion, and usage.
 - **GGUF Conversion**: Optimize for efficient inference with quantization (e.g., Q4_0).
@@ -43,7 +38,8 @@ Logs: `gui.log`, `conversion.log`, `inference.log` (generated during runs).
    ```
    Place the `llama.cpp` folder in your working directory or update the path in `convert_to_gguf.py`.
 4. **Hardware**: CPU works for small models; GPU (NVIDIA CUDA or Apple MPS) for training/inference.
-5. **Dataset**: A text file (e.g., `input.txt`) with clean data. Sources:
+5. **Dataset**: A text file (e.g., `input.txt`) with clean data.
+6. Sources:
    - Hugging Face: The Pile, C4 (download via `datasets` library: `pip install datasets`).
    - Kaggle or Project Gutenberg for free texts.
    - Ethical note: Use public-domain or licensed data; avoid biases.
